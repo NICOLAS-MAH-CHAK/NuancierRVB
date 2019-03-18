@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/Bouton_Actuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/Bouton_Precedant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/Bouton_Penultieme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        >
+
+        <TextView
+            android:id="@+id/Text_SB_RED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="R :"
+            />
+        <SeekBar
+            android:id="@+id/SB_Red"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="255"
+            android:min="0"
+            />
+
+
+        <TextView
+            android:id="@+id/Text_SB_GREEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G :"/>
+        <SeekBar
+            android:id="@+id/SB_GREEN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="255"
+            android:min="0"
+            />
+
+
+        <TextView
+            android:id="@+id/Text_SB_BLUE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B :"/>
+        <SeekBar
+            android:id="@+id/SB_BLUE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:max="255"
+            android:min="0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Bouton_Enregistrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enregistrer"/>
+        <Button
+            android:id="@+id/Bouton_Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remise à zero"
+            />
+        <ToggleButton
+
+            android:id="@+id/ToggleBouton_WEB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="WEB"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
